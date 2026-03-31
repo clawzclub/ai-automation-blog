@@ -1,0 +1,50 @@
+baseURL: https://example.github.io/ai-automation-blog/
+locale: en-us
+title: AI Automation Lab
+theme: PaperMod
+
+params:
+  description: "Practical guides for AI automation, trading bots, and making money with AI agents."
+  author: Matt K
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  defaultTheme: auto
+  homeInfoParams:
+    Title: "AI Automation Lab"
+    Content: "Practical guides for building AI agents, trading bots, and automated income streams. Real setups, real results."
+  socialIcons:
+    - name: github
+      url: "https://github.com/"
+    - name: telegram
+      url: "https://t.me/"
+
+menu:
+  main:
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 5
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 15
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
